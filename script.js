@@ -138,13 +138,12 @@
     let myAudio = new Audio();
 
     myAudio.src = 'https://github.com/kimberleyroche/birthday-message-site/raw/main/happy-birthday-to-you-piano-version-13976.mp3';
-    myAudio.controls = true;
-    myAudio.volume = 0.7;
-
+    
     let button = document.getElementById('testbutton');
     button.addEventListener('click', function() {
         if (myAudio.paused) {
             myAudio.play();
+            myAudio.volume = 0.75;
         }
         else {
             myAudio.pause();
