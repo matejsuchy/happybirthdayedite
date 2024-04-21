@@ -143,16 +143,15 @@
     myAudio.controls = true;
     myAudio.volume = 0.7;
 
-    function Gameloop() {
-        myAudio.play();
-        if (myAudio.paused == true) {
+    let button = document.getElementById('testbutton');
+    button.addEventListener('click', function() {
+        if (myAudio.paused) {
             myAudio.play();
         }
-    }
-    
-    myAudio.addEventListener('ended', () => {
-        myAudio.play();
-    })
+        else {
+            myAudio.pause();
+        }
+    });
 
 
     let canvas = document.getElementById('birthday')
