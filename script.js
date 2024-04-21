@@ -140,6 +140,8 @@
     let myAudio = new Audio();
 
     myAudio.src = 'https://github.com/kimberleyroche/birthday-message-site/raw/main/happy-birthday-to-you-piano-version-13976.mp3';
+    myAudio.controls = true;
+    myAudio.volume = 0.7;
 
     function Gameloop() {
         myAudio.play();
@@ -147,6 +149,10 @@
             myAudio.play();
         }
     }
+    
+    myAudio.addEventListener('ended', () => {
+        myAudio.play();
+    })
 
 
     let canvas = document.getElementById('birthday')
