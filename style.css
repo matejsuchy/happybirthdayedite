@@ -4,6 +4,37 @@ body {
     cursor: crosshair;
 }
 canvas{display:block}
+
+/* Apply these styles when the viewport is 600px or less */
+@media screen and (max-width: 600px) {
+    h1 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+  }
+  
+  /* Apply these styles when the viewport is between 601px and 900px */
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    h1 {
+      font-size: 3.5em;
+    }
+    p {
+      font-size: 2em;
+    }
+  }
+  
+  /* Apply these styles when the viewport is larger than 900px */
+  @media screen and (min-width: 901px) {
+    h1 {
+      font-size: 5em;
+    }
+    p {
+      font-size: 3em;
+    }
+  }
+
 h1 {
     position: absolute;
     top: 20%;
