@@ -40,7 +40,6 @@ canvas{display:block}
   }
 
 h1 {
-    position: absolute;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -52,7 +51,6 @@ h1 {
     user-select: none;
 }
 p {
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -83,14 +81,14 @@ p {
     justify-content: center;
     align-items: center;
   }
-  
+
 #testbutton {
     width: 150px;
     height:50px;
     border-radius:180px;
     position:absolute;
     left:calc(50% - 75px);
-    top:calc(50% - -125px);
+    top:calc(80% - -125px);
     background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
     cursor:pointer;
     line-height:12px;
