@@ -135,6 +135,20 @@
       }
     }
     
+    window.onload = setInterval(Gameloop, 1000 / 10); //10fps
+
+    let myAudio = new Audio();
+
+    myAudio.src = 'https://github.com/kimberleyroche/birthday-message-site/raw/main/happy-birthday-to-you-piano-version-13976.mp3';
+
+    function Gameloop() {
+        myAudio.play();
+        if (myAudio.paused == true) {
+            myAudio.play();
+        }
+    }
+
+
     let canvas = document.getElementById('birthday')
     let ctx = canvas.getContext('2d')
     
