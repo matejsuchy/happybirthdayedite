@@ -1,7 +1,7 @@
 body {
     margin: 50px;
     background: #020202;
-    cursor: crosshair;
+    cursor: default;
 }
 canvas{display:block}
 
