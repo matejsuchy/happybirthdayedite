@@ -1,9 +1,26 @@
 body {
-    margin: 0;
+    margin: 50px;
     background: #020202;
     cursor: crosshair;
 }
 canvas{display:block}
+
+h1 {
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 5em;
+  font-weight: 900;
+  -webkit-user-select: none;
+  user-select: none;
+}
+p {
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 3em;
+  font-weight: 600;
+  -webkit-user-select: none;
+  user-select: none;
+}
 
 /* Apply these styles when the viewport is 600px or less */
 @media screen and (max-width: 600px) {
@@ -34,23 +51,6 @@ canvas{display:block}
       font-size: 3em;
     }
   }
-
-h1 {
-    color: #fff;
-    font-family: "Source Sans Pro";
-    font-size: 5em;
-    font-weight: 900;
-    -webkit-user-select: none;
-    user-select: none;
-}
-p {
-    color: #fff;
-    font-family: "Source Sans Pro";
-    font-size: 3em;
-    font-weight: 600;
-    -webkit-user-select: none;
-    user-select: none;
-}
 
 .container {
     position: relative;
@@ -85,14 +85,11 @@ p {
     height: 80px;
     align-self: center;
   }
-  
+
 #testbutton {
     width: 200px;
     height:80px;
     border-radius:180px;
-    position:absolute;
-    left:calc(50% - 125px);
-    top:calc(70% - -125px);
     background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
     cursor:pointer;
     line-height:18px;
