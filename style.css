@@ -1,5 +1,5 @@
 body {
-    margin: 50px;
+    margin: 25px;
     background: #020202;
     cursor: default;
 }
@@ -25,10 +25,10 @@ p {
 /* Apply these styles when the viewport is 600px or less */
 @media screen and (max-width: 600px) {
     h1 {
-      font-size: 2em;
+      font-size: 3em;
     }
     p {
-      font-size: 1.2em;
+      font-size: 1.7em;
     }
   }
   
